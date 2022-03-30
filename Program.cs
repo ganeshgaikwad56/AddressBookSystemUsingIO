@@ -5,11 +5,14 @@ namespace AddressBookSystemIO
     {
         public static void Main(string[] args)
         {
-            string path = @"C:\Users\HP\Desktop\fellowShip\AddressBookSystemIO\AddressBook.txt";
+            //string path = @"C:\Users\HP\Desktop\fellowShip\AddressBookSystemIO\AddressBook.txt";
 
             //ReadAllLines(path);
             //ReadFromStreamReader(path);
-            WriteUsingStreamWriter(path);
+            //WriteUsingStreamWriter(path);
+
+            CsvHandler csvHandler = new CsvHandler();
+            csvHandler.ImplementCSV();
 
 
         }
